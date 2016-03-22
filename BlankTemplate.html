@@ -242,6 +242,7 @@
   }
 
   #social_icons {
+    height: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -254,7 +255,25 @@
     padding-right: 10px;
   }
 
-  </style>
+  #unsubscribe {
+    font-size: 11px;
+    line-height: 15px;
+    mso-line-height-rule: exactly;
+    color: #abafb3 !important;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 400px;
+    text-align: center;
+  }
+
+  #unsubscribe a {
+   color: #abafb3;
+   font-weight: bold;
+   text-decoration: underline;
+ }
+
+ </style>
 </head>
 
 <body bgcolor="#e7e8e9">  
@@ -369,23 +388,30 @@
                     </table>
                   </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
+          <tr>
+            <td align="center" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="center" style="font-size:11px;color:#abafb3; font-family:arial,sans-serif; padding-top:40px; padding-bottom:20px; padding-left:100px; padding-right:100px; width:400px; text-align:center;" id="unsubscribe">This e-mail was sent to <a style="color:#abafb3; font-weight:bold;" href=mailto:%%emailaddress%%>%%emailaddress%%</a> by <a style="color:#abafb3; font-weight:bold;" href=mailto:%%Reply-To%%>%%Reply-To%%</a>.<br>
-                        <strong>Jack Morton Worldwide</strong>, %%Contact Owner Street%%, %%Contact Owner City%%, %%Contact Owner State%%, %%Contact Owner Postal Code%%, %%Contact Owner Country%%<br>
-                        If you no longer wish to receive commercial e-mail messages from <a style="color:#abafb3; font-weight:bold;" href=mailto:%%Reply-To%%>%%Reply-To%%</a>, please select the following link: <a href="%%unsubscribelink%%" style="font-weight:bold;color:#abafb3;">Unsubscribe</a>.</td>
-                      </tr>
-                    </table></td>
-                  </tr>
+                  <td align="center" id="unsubscribe">
+                    This e-mail was sent to <a href=mailto:%%emailaddress%%>%%emailaddress%%</a> by <a href=mailto:%%Reply-To%%>%%Reply-To%%</a>.<br>
+                    <strong>Jack Morton Worldwide</strong>, %%Contact Owner Street%%, %%Contact Owner City%%, %%Contact Owner State%%, %%Contact Owner Postal Code%%, %%Contact Owner Country%%<br>
+                    If you no longer wish to receive commercial e-mail messages from <a href=mailto:%%Reply-To%%>%%Reply-To%%</a>, please select the following link: <a href="%%unsubscribelink%%">Unsubscribe</a>.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
 
-                  <!-- Content ends -->
-                </table>
-              </td>
-            </tr>
-          </table>
+          <!-- Content ends -->
+        </table>
+      </td>
+    </tr>
+  </table>
 
-        </body> 
-        </html>
+</body> 
+</html>
