@@ -171,18 +171,26 @@
 
   #emailContainer td {
     color: #333d47;
-    font-family: arial, sans-serif;
+    font-family: arial, helvetica, sans-serif;
   }
 
-  #preheader a {
+  #preheader {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .preheader-text {
+    color: #333d47;
+    font-size: 10px;
+    line-height: 15px;
+    mso-line-height-rule: exactly;
+    text-align: right;
+  }
+
+  .preheader-text a {
     color: #333d47 !important;
     font-weight: normal !important;
-  }
-
-  #preheader td {
-    font-size: 10px;
-    text-align: right;
-    mso-line-height-rule:exactly;
+    text-decoration: underline;
   }
 
   #social-icons td {
@@ -234,23 +242,32 @@
 
           <!-- Content begins -->
           <tr>
-            <td align="center" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%" id="preheader">
-              <tr>
-                <td align="center" class="browserlink" valign="top"  style="color: #333d47; font-family:arial, helvetica, sans-serif; font-size: 10px; line-height:12px; padding-top:10px; padding-bottom:10px; text-align:right;">
-                  <a style="color:#333d47; text-decoration:underline;" target="_blank" href="%%webversion%%">View email in a browser</a>
-                </td>
-              </tr>
-            </table></td>
+            <td align="center" valign="top" id="preheader">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="right" valign="top" class="preheader-text">
+                    [Insert preheader text]
+                  </td>
+                </tr>                
+                <tr>
+                  <td align="center" valign="top" class="preheader-text">
+                    <a target="_blank" href="%%webversion%%">View email in a browser</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
           </tr>
 
           <tr>
-            <td align="center" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%" id="header">
-              <tr>
-                <td align="center" valign="top">
-                  <a href="http://www.unicef.org/" target="_blank"><img src="http://www.jackmorton.com/wp-content/uploads/2015/12/holiday_mailer_1280x500.gif" alt="Happy holidays from Jack Morton" border="0" class="full-image" width="640" height="250" style="background-color:#333d47; color:#ffffff; font-family:arial, sans-serif; font-size:32px; font-weight:bold; text-align:left; width:640px; height:250px;" /></a>
-                </td>
-              </tr>
-            </table></td>
+            <td align="center" valign="top" id="header">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top">
+                    <a href="http://www.unicef.org/" target="_blank"><img src="http://www.jackmorton.com/wp-content/uploads/2015/12/holiday_mailer_1280x500.gif" alt="Happy holidays from Jack Morton" border="0" class="full-image" width="640" height="250" style="background-color:#333d47; color:#ffffff; font-family:arial, sans-serif; font-size:32px; font-weight:bold; text-align:left; width:640px; height:250px;" /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
           </tr>
 
           <tr>
