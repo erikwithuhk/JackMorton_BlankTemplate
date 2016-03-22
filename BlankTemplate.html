@@ -109,35 +109,6 @@
     -ms-text-size-adjust:100%;
   }
 
-  @media only screen and (max-width: 639px){
-
-    table[id=emailContainer]{
-      width:100% !important;
-    }
-
-    td[id=preheader] {
-      padding-right:10px;
-    }
-
-    img[class=full-image] {
-      height:auto !important;
-      max-width:640px !important;
-      width: 100% !important;
-    }
-
-  }
-
-  @media only screen and (max-width: 550px){
-
-    td[id=unsubscribe]{
-      max-width: 400px !important;
-      width: 100% !important;
-      padding-left: 16.666% !important;
-      padding-right: 16.666% !important;
-    }
-
-  }
-
 
 
   /*=======================
@@ -273,6 +244,42 @@
    text-decoration: underline;
  }
 
+
+  /*=======================
+
+  Media queries
+
+  =======================*/
+
+
+ @media only screen and (max-width: 639px){
+
+    table[id=emailContainer]{
+      width:100% !important;
+    }
+
+    td[id=preheader] {
+      padding-right:10px;
+    }
+
+    img[class=header-image] {
+      height: auto !important;
+      width: 100% !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 550px){
+
+    td[id=unsubscribe]{
+      max-width: 400px !important;
+      width: 100% !important;
+      padding-left: 16.666% !important;
+      padding-right: 16.666% !important;
+    }
+
+  }
+
  </style>
 </head>
 
@@ -300,19 +307,19 @@
             </td>
           </tr>
 
-          <!-- <tr>
+          <tr>
             <td align="center" valign="top" id="header">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="center" valign="top">
-                    <img src="http://na07.mypinpointe.com/admin/temp/user/565/blanktemplate_header_640x200.png" alt="Header image" border="0" class="header-image full-image" width="640" height="200" style="width:640px; height:200px;" />
+                    <img src="http://na07.mypinpointe.com/admin/temp/user/565/blanktemplate_header_640x200.png" alt="Header image" border="0" class="header-image" width="640" height="200" style="width:640px; height:200px;" />
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td align="center" valign="top" id="body">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
